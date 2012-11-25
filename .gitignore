@@ -1,6 +1,9 @@
-pom.xml
-*jar
-/lib/
-/classes/
-/targets/
-.lein-deps-sum
+/.idea
+/*.iml
+
+/lib
+/.lein-failures
+/.lein-deps-sum
+
+*.jar
+*.class

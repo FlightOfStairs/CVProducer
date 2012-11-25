@@ -34,7 +34,7 @@
                 { :employer "Defence Science and Technology Laboratory"
                   :title "Software Engineer"
                   :dates { :from "August 2010" :to "July 2011" }
-                  :body [ "Worked as a member of a small software department. I had a great deal of freedom to design and implement solutions as I chose. Technologies I used included C\#, Java, Python, Haskell, Evolutionary computation, and Trusted Computing. Areas of work included analysis of large datasets, creating tools to work with program disassembles, and recovering missing data through stochastic methods." ] }
+                  :body [ "Worked as a member of a small software department. I had a great deal of freedom to design and implement solutions as I chose. Technologies I used included C#, Java, Python, Haskell, Evolutionary computation, and Trusted Computing. Areas of work included analysis of large datasets, creating tools to work with program disassembles, and recovering missing data through stochastic methods." ] }
 
                 { :employer "EPSRC/University of Strathclyde"
                   :title "Research Intern"

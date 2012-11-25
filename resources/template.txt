@@ -1,0 +1,22 @@
+<(:name data)>
+
+<(:email data)>
+<(:phone data)>
+
+Skills
+<(clojure.string/join "\n"
+	(map
+		(fn [category] (str " * " (:title category) ": " (clojure.string/join ", " (:body category))))
+		(:skills data)))>
+
+Education
+<(clojure.string/join "\n\n" (map (fn [school] (str
+	" * " (:title school) (if (contains? school :course) (str " - " (:course school)))
+	(if (contains? school :awards) (str (clojure.string/join (for [award (:awards school)] (str "\n   " award))) "\n"))
+	(clojure.string/join (for [body (:body school)] (str "\n   " body))))) (:education data)))>
+
+Employment
+<(clojure.string/join "\n\n" (map (fn [job] (str
+	" * " (:employer job) " - " (:title job)
+	"\n   " (:from (:dates job)) " - " (:to (:dates job))
+	"\n   " (clojure.string/join " " (:body job)))) (:employment data)))>
